@@ -30,11 +30,11 @@ class LinkDAO extends DAO
      * @param array $row The DB row containing Link data.
      * @return \WebLinks\Domain\Link
      */
-    protected function buildDomainObject($row) {
-        $link = new Link();
-        $link->setId($row['link_id']);
-        $link->setUrl($row['link_title']);
-        $link->setTitle($row['link_url']);
+    protected function buildDomainObject(array $row) {
+        $link = (new Link())
+                ->setId($row['link_id'])
+                ->setUrl($row['link_title'])
+                ->setTitle($row['link_url']);
         
         return $link;
     }

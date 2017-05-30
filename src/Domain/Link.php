@@ -24,6 +24,11 @@ class Link {
      * @var string
      */
     private $url;
+    /**
+     *
+     * @var int
+     */
+    private $userId;
 
     public function getId() {
         return $this->id;
@@ -49,6 +54,15 @@ class Link {
 
     public function setUrl($url) {
         $this->url = $url;
+        return $this;
+    }
+
+    public function getUserId() {
+        return $this->userId;
+    }
+
+    public function setUserId($userId) {
+        $this->userId = $userId;
         return $this;
     }
 
