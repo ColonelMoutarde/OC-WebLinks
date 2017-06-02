@@ -1,0 +1,14 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Error!{% endblock %}
+
+{% block content %}
+    <div id="errorPanel">
+        <div class="col-xs-5 margin-bottom margin-top">
+            <iframe src="//giphy.com/embed/m9EQQDn3ujpio" frameBorder="0" class="giphy-embed img-responsive pull-right" allowFullScreen></iframe>
+        </div>
+        <div class="col-xs-6">
+            <h1>Whoops...<br><small>{{ message }}</small></h1>
+        </div>
+    </div>
+{% endblock %}

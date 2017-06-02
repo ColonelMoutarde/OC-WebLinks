@@ -1,8 +1,11 @@
 {
     "require": {
-        "silex/silex": "~1.2",
-        "doctrine/dbal": "~2.4",
-        "twig/twig": "~1.16"
+        "silex/silex": "~2.1",
+        "doctrine/dbal": "~2.5",
+        "twig/twig": " ~1.28",
+        "twig/extensions": "~1.4",
+        "monolog/monolog" : "~1.2",
+        "symfony/monolog-bridge": "~3.2"
     },
     "autoload": {
         "psr-4": {"WebLinks\\": "src"}
