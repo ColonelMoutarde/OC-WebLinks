@@ -1,17 +1,14 @@
 <?php
 
 namespace Weblinks\Controller;
-
 use Silex\Application;
-
  
-class HomeController {
-
+class AdminController {
+    
     public function indexAction(Application $app) {
 
-        $links = $app['dao.link']->findAll();
+        $links = $app['dao.user']->findAll();
 
         return $app['twig']->render('index.html.twig', ['links' => $links]);
     }
-
 }

@@ -29,6 +29,13 @@ $app['dao.link'] =  function ($app) {
     return $linkDAO;
 };
 
+// Register services
+$app['dao.user'] =  function ($app) {
+    $linkDAO = new WebLinks\DAO\UserDAO($app['db']);
+    return $linkDAO;
+};
+
+
 
 // Register error handler
 $app->error(function (\Exception $e, Request $request, $code) use ($app) {
